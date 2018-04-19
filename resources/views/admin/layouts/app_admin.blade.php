@@ -11,6 +11,7 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Scripts -->
+    <script src="https://use.fontawesome.com/9ba85317c0.js"></script>
     <script src="{{ asset('js/app.js') }}" defer></script>
 
     <!-- Fonts -->
@@ -38,7 +39,7 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Blog</a>
                         <ul class="dropdown-menu" role="menu">
                             <li class="dropdown-item">
-                                <a href="#">Category</a>
+                                <a href="{{ route('admin.category.index') }}">Category</a>
                             </li>
                             <li class="dropdown-item">
                                 <a href="#">Material</a>
