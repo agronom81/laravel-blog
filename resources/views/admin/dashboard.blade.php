@@ -27,7 +27,15 @@
 
         <div class="row">
             <div class="col-sm-6">
-                <a href="#" class="btn btn-block btn-primary mb-3">Create Category</a>
+                <a href="{{ route('admin.category.create') }}" class="btn btn-block btn-primary mb-3">Create Category</a>
+                @foreach($categories as $category)
+                    <a href="{{ route('admin.category.edit', $category) }}" class="list-group-item">
+                        <h4 class="list-group-item-heading">{{ $category->title }}</h4>
+                        <p class="list-group-item-text">
+                            How much Materials
+                        </p>
+                    </a>
+                @endforeach
                 <a href="#" class="list-group-item">
                     <h4 class="list-group-item-heading">Category First</h4>
                     <p class="list-group-item-text">

@@ -12,7 +12,8 @@
 
     <!-- Scripts -->
     <script src="https://use.fontawesome.com/9ba85317c0.js"></script>
-    <script src="{{ asset('js/app.js') }}" defer></script>
+
+
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
@@ -35,14 +36,17 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <!-- Left Side Of Navbar -->
                 <ul class="navbar-nav mr-auto">
+                    <li class="mr-3">
+                        <a href="{{ route('admin.index') }}">Панель Состояния</a>
+                    </li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Blog</a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Blog</a>
                         <ul class="dropdown-menu" role="menu">
                             <li class="dropdown-item">
                                 <a href="{{ route('admin.category.index') }}">Category</a>
                             </li>
                             <li class="dropdown-item">
-                                <a href="#">Material</a>
+                                <a href="{{ route('admin.article.index') }}">News</a>
                             </li>
                         </ul>
                     </li>
@@ -82,5 +86,8 @@
         @yield('content')
     </main>
 </div>
+
+<script src="{{ asset('/vendor/unisharp/laravel-ckeditor/ckeditor.js') }}"></script>
+<script src="{{ asset('js/app.js') }}" defer></script>
 </body>
 </html>

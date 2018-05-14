@@ -7,6 +7,12 @@
 
 require('./bootstrap');
 
+//CKEDITOR
+document.addEventListener("DOMContentLoaded", function(){
+    CKEDITOR.replace( 'description_short' );
+    CKEDITOR.replace( 'description' );
+});
+
 window.Vue = require('vue');
 
 /**
