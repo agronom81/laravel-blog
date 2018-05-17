@@ -39,7 +39,7 @@
                     <li class="mr-3">
                         <a href="{{ route('admin.index') }}">Панель Состояния</a>
                     </li>
-                    <li class="dropdown">
+                    <li class="dropdown mr-3">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Blog</a>
                         <ul class="dropdown-menu" role="menu">
                             <li class="dropdown-item">
@@ -47,6 +47,14 @@
                             </li>
                             <li class="dropdown-item">
                                 <a href="{{ route('admin.article.index') }}">News</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown mr-3">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Control users</a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li class="dropdown-item">
+                                <a href="{{ route('admin.user_managment.user.index') }}">Users</a>
                             </li>
                         </ul>
                     </li>
